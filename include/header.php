@@ -22,12 +22,12 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-info bg-info">
-        <h5 class="text-white">Hospital Management System</h5>
+        <h5 class="text-white" style="margin-left: 5px;">Hospital Management System</h5>
 
         <div class="me-auto"></div>
 
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="" class="nav-link text-white">Admin</a></li>
+            <li class="nav-item"><a href="adminlogin.php" class="nav-link text-white">Admin</a></li>
             <li class="nav-item"><a href="" class="nav-link text-white">Doctor</a></li>
             <li class="nav-item"><a href="" class="nav-link text-white">Patient</a></li>
         </ul>
