@@ -33,10 +33,10 @@ include("include/header.php");
                 <div class="col-md-3 mx-3 shadow">
                     <img src="images/doctor.png" alt="doctor" style="width: 100%;">
 
-                    <h5 class="text-center">We are hiring for doctors!</h5>
+                    <h5 class="text-center">View doctors as per your need!</h5>
 
                     <a href="">
-                        <button class="btn btn-success my-3" style="margin-left: 35%;">Apply Now</button>
+                        <button class="btn btn-success my-3" style="margin-left: 35%;">Doctors List</button>
                     </a>
                 </div>
             </div>
