@@ -10,22 +10,22 @@ if (isset($_POST['login'])) {
     $error = array();
 
     if (empty($username)) {
-        $error['admin'] = "Enter Username";
+        $error['doctors'] = "Enter Username";
     }else if (empty($password)){
-        $error['admin'] = "Enter Password";
+        $error['doctors'] = "Enter Password";
     }
 
     if (count($error)==0){
-        $query = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+        $query = "SELECT * FROM doctors WHERE username='$username' AND password='$password'";
 
         $result = mysqli_query($connect,$query);
 
         if (mysqli_num_rows($result) == 1) {
-            echo "<script>alert('You have logged in as an admin')</script>";
+            echo "<script>alert('You have logged in as a doctor')</script>";
 
-            $_SESSION['admin']=$username;
+            $_SESSION['doctors']=$username;
 
-            header("Location:admin/index.php");
+            header("Location:doctors/index.php");
             exit();
         }else{
             echo "<script>alert('Invalid Username or Password')</script>";
@@ -35,35 +35,34 @@ if (isset($_POST['login'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
+    <title>Doctor Page</title>
 </head>
-
 <body>
+    
+<?php
 
-    <?php
-    include("include/header.php");
-    ?>
+include("include/header.php");
 
-    <div class="containter">
+?>
+
+<div class="containter">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 rounded-3" style="margin-top: 50px;">
-                <img src="images/admin.png" alt="admin" class="col-md-3 offset-md-4">
+                <img src="images/doctor.png" alt="admin" class="col-md-3 offset-md-4">
                     <form method="post" style="margin: 50px 50px;" class="my-2">
 
                         <div>
                             <?php
-                                if(isset($error['admin'])){
-                                    $sh= $error['admin'];
+                                if(isset($error['doctors'])){
+                                    $sh= $error['doctors'];
 
                                     $show="<h6 class='alert alert-danger'>$sh</h6>";
                                 }
@@ -91,5 +90,4 @@ if (isset($_POST['login'])) {
     </div>
 
 </body>
-
 </html>
