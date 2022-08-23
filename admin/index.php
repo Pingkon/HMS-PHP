@@ -58,7 +58,12 @@ session_start();
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-9">
-                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
+                                    <?php
+                                            $ad = mysqli_query($connect, "SELECT * FROM doctors");
+
+                                            $num=mysqli_num_rows($ad);
+                                        ?>
+                                            <h5 class="my-1 text-white" style="font-size: 30px;"><?php echo $num; ?></h5>
                                             <h5 class="text-white">Total</h5>
                                             <h5 class="text-white">Doctors</h5>
                                     </div>
@@ -73,7 +78,12 @@ session_start();
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-8">
-                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
+                                    <?php
+                                            $ad = mysqli_query($connect, "SELECT * FROM patients");
+
+                                            $num=mysqli_num_rows($ad);
+                                        ?>
+                                            <h5 class="my-1 text-white" style="font-size: 30px;"><?php echo $num; ?></h5>
                                             <h5 class="text-white">Total</h5>
                                             <h5 class="text-white">Patients</h5>
                                     </div>
@@ -84,50 +94,7 @@ session_start();
                             </div>
                         </div>
 
-                        <div class="col-md-3 bg-danger mx-2 my-2" style="height: 130px;">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
-                                            <h5 class="text-white">Total</h5>
-                                            <h5 class="text-white">Reports</h5>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <i class="fa-solid fa-flag fa-5x my-3" style="color: white;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 bg-warning mx-2 my-2" style="height: 130px;">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
-                                            <h5 class="text-white">Total</h5>
-                                            <h5 class="text-white">Job Requests</h5>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <i class="fa-solid fa-book-open fa-5x my-3" style="color: white;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3 bg-success mx-2 my-2" style="height: 130px;">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
-                                            <h5 class="text-white">Total</h5>
-                                            <h5 class="text-white">Income</h5>
-                                    </div>
-                                    <div class="col-md-4">
-                                    <i class="fa-solid fa-money-check-dollar fa-5x my-3" style="color: white;"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

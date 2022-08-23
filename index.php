@@ -26,7 +26,7 @@ include("include/header.php");
 
                     <h5 class="text-center">Create an account to for care!</h5>
 
-                    <a href="">
+                    <a href="patientsignup.php">
                         <button class="btn btn-success my-3" style="margin-left: 35%;">Sign Up</button>
                     </a>
                 </div>
@@ -35,7 +35,7 @@ include("include/header.php");
 
                     <h5 class="text-center">View doctors as per your need!</h5>
 
-                    <a href="">
+                    <a href="doctors.php">
                         <button class="btn btn-success my-3" style="margin-left: 35%;">Doctors List</button>
                     </a>
                 </div>
