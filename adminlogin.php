@@ -60,10 +60,12 @@ if (isset($_POST['login'])) {
                 <img src="images/admin.png" alt="admin" class="col-md-3 offset-md-4">
                     <form method="post" style="margin: 50px 50px;" class="my-2">
 
-                        <div class="alert alert-danger">
+                        <div>
                             <?php
                                 if(isset($error['admin'])){
-                                    $show= $error['admin'];
+                                    $sh= $error['admin'];
+
+                                    $show="<h6 class='alert alert-danger'>$sh</h6>";
                                 }
                                 else{
                                     $show= "";

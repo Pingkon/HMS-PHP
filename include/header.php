@@ -16,6 +16,11 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
     <title>HMS</title>
 </head>
 
@@ -35,16 +40,15 @@
 
                 echo '
                 <li class="nav-item"><a href="" class="nav-link text-white">'.$user.'</a></li>
-                <li class="nav-item"><a href="logout" class="nav-link text-white">Logout</a></li>';
+                <li class="nav-item"><a href="logout.php" class="nav-link text-white">Logout</a></li>
+                ';
 
             }
             else{
                 echo '
-                
                 <li class="nav-item"><a href="adminlogin.php" class="nav-link text-white">Admin</a></li>
-            <li class="nav-item"><a href="" class="nav-link text-white">Doctor</a></li>
-            <li class="nav-item"><a href="" class="nav-link text-white">Patient</a></li>
-
+                <li class="nav-item"><a href="" class="nav-link text-white">Doctor</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-white">Patient</a></li>
                 ';
             }
 
