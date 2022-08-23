@@ -35,24 +35,46 @@ session_start();
                         <div class="col-md-3 bg-success mx-2" style="height: 130px;">
                             <div class="col-md-12">
                                 <div class="row">
-                                    <div class="col-md-9">
+                                    <div class="col-md-8">
                                         <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
                                         <h5 class="text-white">Total</h5>
                                         <h5 class="text-white">Admin</h5>
                                     </div>
-                                    <div class="col-md-3">
-                                    <i class="fa-solid fa-user-gear fa-3x my-3" style="color: white;"></i>
+                                    <div class="col-md-4">
+                                    <i class="fa-solid fa-user-gear fa-5x my-3" style="color: white;"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-3 bg-info mx-2" style="height: 130px;">
-                    
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
+                                            <h5 class="text-white">Total</h5>
+                                            <h5 class="text-white">Doctors</h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <i class="fa-solid fa-user-doctor fa-5x my-3" style="color: white;"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-md-3 bg-warning mx-2" style="height: 130px;">
-                    
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                            <h5 class="my-1 text-white" style="font-size: 30px;">0</h5>
+                                            <h5 class="text-white">Total</h5>
+                                            <h5 class="text-white">Patients</h5>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <i class="fa-solid fa-bed fa-5x my-3" style="color: white;"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="col-md-3 bg-danger mx-2 my-2" style="height: 130px;">
