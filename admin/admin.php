@@ -81,7 +81,6 @@ session_start();
                                         if(isset($_POST['add'])) {
                                             $uname=$_POST['uname'];
                                             $pass=$_POST['pass'];
-                                            $image=$_FILES['img']['name'];
 
                                             $error=array();
 
@@ -89,20 +88,12 @@ session_start();
                                                 $error['u']="Enter Username";
                                             }else if(empty($pass)){
                                                 $error['u']="Enter Password";
-                                            }else if(empty($image)){
-                                                $error['u']="Add Picture";
                                             }
 
                                             if(count($error)==0){
-                                                $q="INSERT INTO admin(username, password, profile) VALUES ('$uname','$pass','$image')";
+                                                $q="INSERT INTO admin(username, password) VALUES ('$uname','$pass')";
 
                                                 $result = mysqli_query($connect,$q);
-
-                                                if($result){
-                                                    move_uploaded_file($_FILES['img']['tmp_name'],"img/$image");
-                                                }else{
-
-                                                }
                                             }
                                         }
                                     
@@ -132,9 +123,6 @@ session_start();
                                         <input type="password" name="pass" class="form-control">
                                     </div>
 
-                                    <div class="form-label">
-                                        <input type="file" name="img" class="form-control">
-                                    </div>
                                     <input type="submit" name=add value="Add New Admin" class="btn btn-success">
 
                                 </form>
