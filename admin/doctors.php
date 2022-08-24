@@ -33,7 +33,7 @@ session_start();
                                 <h5 class="text-center">All Doctors</h5>
 
                                 <?php
-                                    $ad = $_SESSION['doctors'];
+                                    $ad = $_SESSION['admin'];
                                     $query = "SELECT * FROM doctors WHERE username !='$ad'";
                                     $res = mysqli_query($connect,$query);
 
